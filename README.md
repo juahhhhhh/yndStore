@@ -1,2 +1,0 @@
-# yndStore
-ynd-store
