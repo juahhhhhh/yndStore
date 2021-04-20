@@ -1,12 +1,15 @@
 import './static/app.css';
+import Header from "./common/header";
+import Contents from "./common/contents";
+import Footer from "./common/footer";
 
 function App() {
   return (
-  <>
-    <header />
-    <contents />
-    <footer />
-  </>
+      <>
+        <Header/>
+        <Contents/>
+        <Footer/>
+      </>
   );
 }
 
