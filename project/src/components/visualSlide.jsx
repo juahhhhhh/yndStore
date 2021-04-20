@@ -12,6 +12,7 @@ const VisualTitle = styled.div`
 const Picture = styled.div`
   height:510px;
   width:100%;
+  border-bottom:2px solid red;
   background-position:center;
   background-size:cover
 `;

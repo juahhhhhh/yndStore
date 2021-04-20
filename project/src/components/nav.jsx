@@ -1,16 +1,43 @@
 import React from 'react';
+import styled from "styled-components";
 
+
+
+const MenuList =  styled.ul`
+  float:left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+`;
+
+const MenuListItem = styled.li`
+  display:inline-block;
+  margin:0 0 0 10px;
+  &:hover {
+    color: red;
+  }`;
+
+const FindInput = styled.div `
+  float:left;
+  border-radius:5px;
+`;
+
+const UserBtn = styled.div `
+  float:left;
+`;
 const Nav = () => {
     return (
         <>
-            <ul>
-                <li><a href="#">menu-01</a></li>
-                <li><a href="#">menu-02</a></li>
-                <li><a href="#">menu-03</a></li>
-            </ul>
+            <MenuList>
+                <MenuListItem><a href="#">menu-01</a></MenuListItem>
+                <MenuListItem><a href="#">menu-02</a></MenuListItem>
+                <MenuListItem><a href="#">menu-03</a></MenuListItem>
+            </MenuList>
 
-            <div><input type="text"/></div>
-            <div>
+            <FindInput><input type="text"/></FindInput>
+            <UserBtn>
                 <button>로그인</button>
                 <button>회원가입</button>
                 <button>마이페이지</button>
@@ -23,7 +50,7 @@ const Nav = () => {
                 {/*    <li><a href="">로그아웃</a></li>*/}
                 {/*</ul>*/}
                 <button>장바구니</button>
-            </div>
+            </UserBtn>
         </>
     );
 };
