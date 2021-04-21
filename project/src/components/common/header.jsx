@@ -1,15 +1,19 @@
 import React from 'react';
 import Nav from '../contents/nav';
-import styled from "styled-components";
+import styled from 'styled-components';
+import footerLogo from '../../images/logo.png';
 
 const Header = () => {
     return (
+
         <HeaderWrap>
             <HeaderInner>
+                {/*<h1><img src={footerLogo} alt="야나두"/></h1>*/}
                 <h1>yanadoo</h1>
-                <Nav/>
                 <input className="menu-btn" type="checkbox" id="menu-btn"/>
-                <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
+                <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"/></label>
+                <Nav/>
+
             </HeaderInner>
         </HeaderWrap>
     );
@@ -17,7 +21,7 @@ const Header = () => {
 
 export default Header;
 
-const HeaderWrap = styled.div`
+const HeaderWrap = styled.header`
   position: fixed;
   top: 0;
   width: 100%;
