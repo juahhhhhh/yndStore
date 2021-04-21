@@ -1,23 +1,6 @@
 import React from 'react';
-import Nav from '../components/nav';
+import Nav from '../contents/nav';
 import styled from "styled-components";
-
-const HeaderWrap = styled.div`
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #fff;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-  border-bottom: 1px solid #d6d6d6;
-  z-index: 1000;
-`;
-const HeaderInner = styled.div`
-  width:100%;
-  background-position:center;
-  background-size:cover
-`;
-
-
 
 const Header = () => {
     return (
@@ -33,3 +16,16 @@ const Header = () => {
 };
 
 export default Header;
+
+const HeaderWrap = styled.div`
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  border-bottom: 1px solid #d6d6d6;
+  z-index: 1000;
+`;
+const HeaderInner = styled.div`
+  overflow:hidden;
+`;

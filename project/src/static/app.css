@@ -18,11 +18,11 @@ h1 {    display: block;
     font-size: 2em;
     padding: 10px 20px;
     text-decoration: none;}
+.visual-slide-col { padding-top:65px;}
 .visual-slide-col .inner-col {width:80%; max-width:1275px; margin:0 auto}
-.visual-slide-col .slick-list {margin:0 -10px}
-.visual-slide-col .slick-slide {margin:0 10px}
-.slick-prev {left:0;}
-.slick-next {right:0}
+.visual-slide-col .slick-slide a {display:block !important; position:relative;}
+.slick-prev {left:15px !important; z-index: 1}
+.slick-next {right:15px !important; z-index: 1}
 
 
 /*responsive*/

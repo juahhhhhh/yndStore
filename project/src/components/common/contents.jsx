@@ -1,7 +1,7 @@
 import React from 'react';
-import VisualSlide from "../components/visualSlide";
-import ClassSlide from "../components/classSlide";
-import MembershipSlide from "../components/membershipSlide";
+import VisualSlide from "../contents/visualSlide";
+import ClassSlide from "../contents/classSlide";
+import MembershipSlide from "../contents/membershipSlide";
 
 const Contents = () => {
     return (
