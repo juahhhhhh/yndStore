@@ -1,23 +1,14 @@
 import React from 'react';
-import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGhost} from "@fortawesome/free-solid-svg-icons";
-const SectionTitle = ({ title, desc }) => {
+import Title from '../../styles/title'
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faGhost} from "@fortawesome/free-solid-svg-icons";
+const SectionTitle = ({ beforeDesc, title, afterDesc, type }) => {
     return (
-        <TitleWrap>
-            <FontAwesomeIcon icon={faGhost} />
-            <Title className='title'>{title}</Title>
-            <Desc className='desc'>{desc}</Desc>
-        </TitleWrap>
+        <Title type={type}>
+            {beforeDesc} <br/>
+            <strong style={{fontWeight:"900"}}>{title}</strong>
+            {afterDesc}
+        </Title>
     );
 };
 export default SectionTitle;
-const TitleWrap = styled.div`
-font-size:20px;
-`;
-const Title = styled.strong`
-font-size:20px;
-`;
-const Desc = styled.p`
-font-size:10px;
-`;

@@ -9,8 +9,6 @@ function App() {
         <Header/>
         <Contents/>
         <Footer/>
-
-
           {/*예제*/}
           <BodyWrapper>
               <Box1>one one</Box1>
