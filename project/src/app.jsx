@@ -24,7 +24,7 @@ export default App;
 
 const BodyWrapper = styled.div`
   width: 100vw;
-  height: 100vh;
+  //height: 100vh;
   display: flex;
   ${({ theme }) => theme.tablet`
     justify-content: center;

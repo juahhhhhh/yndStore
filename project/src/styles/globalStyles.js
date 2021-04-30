@@ -28,7 +28,9 @@ const GlobalStyles = createGlobalStyle`
         background-color: transparent;
     }
     h1 {
-      padding:20px;
+      display: block;
+      float: left;
+      padding:27px;
       font-family:'Maven Pro', sans-serif;
       font-size:20px;
       font-weight: bold;
@@ -36,6 +38,12 @@ const GlobalStyles = createGlobalStyle`
     h2, h3, h4, h5, h6 {
     font-family:'Maven Pro', sans-serif;
   }
+
+    select::-ms-expand {
+      display: none
+    }
+
+
 `;
 
 export default GlobalStyles;

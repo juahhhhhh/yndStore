@@ -5,15 +5,33 @@ import footerLogo from '../../images/logo.png';
 
 const Header = () => {
     return (
-
         <HeaderWrap>
             <HeaderInner>
-                {/*<h1><img src={footerLogo} alt="야나두"/></h1>*/}
-                <h1>yanadoo</h1>
+                <h1><img src={footerLogo} alt="야나두"/></h1>
+                {/*<h1>yanadoo</h1>*/}
                 <input className="menu-btn" type="checkbox" id="menu-btn"/>
                 <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"/></label>
                 <Nav/>
-
+                <HeaderSearch><input type="text" placeholder={'검색'} className='search'/></HeaderSearch>
+                <div style={{float:"left",margin:"0 30px",lineHeight:"90px"}}>야나두 회원님</div>
+                {/*<MyBtn>마이페이지</MyBtn>*/}
+                {/*<MyMenu>*/}
+                {/*    <li><a href="">내 클래스</a></li>*/}
+                {/*    <li><a href="">주문/배송 조회</a></li>*/}
+                {/*    <li><a href="">쿠폰</a></li>*/}
+                {/*    <li><a href="">찜한 상품</a></li>*/}
+                {/*    <li><a href="">나의 문의 내역</a></li>*/}
+                {/*    <li><a href="">로그아웃</a></li>*/}
+                {/*</MyMenu>*/}
+                <MyPageBtn name="" id="">
+                    <option value="">마이페이지</option>
+                    <option value="">내 클래스</option>
+                    <option value="">주문/배송 조회</option>
+                    <option value="">쿠폰</option>
+                    <option value="">찜한 상품</option>
+                    <option value="">나의 문의 내역</option>
+                    <option value="">로그아웃</option>
+                </MyPageBtn>
             </HeaderInner>
         </HeaderWrap>
     );
@@ -32,4 +50,44 @@ const HeaderWrap = styled.header`
 `;
 const HeaderInner = styled.div`
   overflow:hidden;
+  width:75%;
+  margin:0 auto;
 `;
+const HeaderSearch = styled.div`
+  float:left;
+  margin:0 0 0 70px;
+  line-height:90px;
+  .search {
+    width:250px;
+    padding:10px;
+    border-radius:20px;
+    border:1px solid #ddd;
+    box-sizing: border-box;
+    outline:none;
+  }
+`;
+
+const MyMenu = styled.ul`
+  display:none
+`;
+const MyBtn = styled.button`
+  display:block;
+  &:hover ${MyMenu} {
+    display:block;
+    background:darkred;
+  }
+`;
+
+const MyPageBtn = styled.select`
+  float:left;
+ width:140px;
+  margin:26.5px 0;
+  padding:10px;
+  border:1px solid #ddd;
+  border-radius:10px;
+  box-sizing: border-box;
+  appearance: none;
+  && {
+    text-align:right;
+  }
+`

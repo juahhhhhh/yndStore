@@ -7,9 +7,10 @@ const Nav = () => {
     return (
         <>
             <MenuList>
-                <MenuListItem><a href="#">menu-01</a></MenuListItem>
-                <MenuListItem><a href="#">menu-02</a></MenuListItem>
-                <MenuListItem><a href="#">menu-03</a></MenuListItem>
+                <MenuListItem><a href="#">멤버십 프로그램</a></MenuListItem>
+                <MenuListItem><a href="#">자율 프로그램</a></MenuListItem>
+                <MenuListItem><a href="#">커뮤니티</a></MenuListItem>
+                <MenuListItem><a href="#">이벤트</a></MenuListItem>
             </MenuList>
 
             {/*<FindInput><input type="text"/></FindInput>*/}
@@ -34,12 +35,7 @@ const Nav = () => {
 export default Nav;
 
 const MenuList =  styled.ul`
-  //float:left;
-  //margin: 0;
-  //padding: 0;
-  //list-style: none;
-  //overflow: hidden;
-  //background-color: #fff;
+  float:left;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -48,24 +44,30 @@ const MenuList =  styled.ul`
   clear: both;
   max-height: 0;
   transition: max-height .2s ease-out;
+  vertical-align: middle;
+  display: table-cell;
   @media (min-width: 48em) {
     clear: none;
-    float: left;
     max-height: none;
   }
 `;
 
 const MenuListItem = styled.li`
-  //display:inline-block;
-  //margin:0 0 0 10px;
+  display: inline-block;
+  vertical-align: top;
   @media (min-width: 48em) {
     float: left;
+    padding: 38px 30px;
+  }
+  @media screen and (max-width: 35.5em) {
+  color:blue
   }
     &:hover {
     color: red;
   }
   & > a {
-    color: yellowgreen;
+    color: #000;
+    font-weight:800
   }`;
 
 const FindInput = styled.div `
