@@ -23,7 +23,7 @@ const VisualSlide2 = () => {
 
         <div className="visual-slide-col">
             <div className="inner-col">
-                <SectionTitle type={true}  beforeDesc={'야나두 야나두'} title={'Swiper Library 사용'} afterDesc={''}/>
+                <SectionTitle align={true}  beforeDesc={'야나두 야나두'} title={'Swiper Library 사용'} afterDesc={''}/>
                 <Swiper
                     className='swiper-container'
                     spaceBetween={10}

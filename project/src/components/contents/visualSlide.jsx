@@ -54,7 +54,7 @@ const VisualSlide = () => {
     return (
         <div className="visual-slide-col">
             <div className="inner-col">
-                <SectionTitle type={false}  beforeDesc={''} title={'Slick React Library 사용'} afterDesc={''}/>
+                <SectionTitle align={false}  beforeDesc={''} title={'Slick React Library 사용'} afterDesc={''}/>
                 <Slider {...settings}>
                     {SlideList && SlideList.length > 0 && (
                         SlideList.map((item,idx) => {

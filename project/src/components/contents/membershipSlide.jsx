@@ -21,7 +21,7 @@ const MembershipSlide = () => {
     return (
         <div className="membership-col">
             <div className="inner-col">
-                <SectionTitle  inverted ={true}  beforeDesc={'내가 듣고싶은 클래스만 묶어서 들을 수 있다?'} title={'야나두 추천 멤버쉽'} afterDesc={''}/>
+                <SectionTitle  align={true}  beforeDesc={'내가 듣고싶은 클래스만 묶어서 들을 수 있다?'} title={'야나두 추천 멤버쉽'} afterDesc={''}/>
 
                 <>
                     <Swiper

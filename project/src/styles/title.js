@@ -13,7 +13,7 @@ const Title = styled.h2`
   //flex-direction: column;
   /* 다음 코드는 align 값이 true 일 때 특정 스타일을 부여해줍니다. */
   ${props =>
-    props.type &&
+    props.align &&
     css`
       //align-items: left;
       //justify-content: left;

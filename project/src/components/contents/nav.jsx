@@ -35,7 +35,7 @@ const Nav = () => {
 export default Nav;
 
 const MenuList =  styled.ul`
-  float:left;
+  //float:left;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -45,7 +45,7 @@ const MenuList =  styled.ul`
   max-height: 0;
   transition: max-height .2s ease-out;
   vertical-align: middle;
-  display: table-cell;
+  //display: table-cell;
   @media (min-width: 48em) {
     clear: none;
     max-height: none;
@@ -57,7 +57,7 @@ const MenuListItem = styled.li`
   vertical-align: top;
   @media (min-width: 48em) {
     float: left;
-    padding: 38px 30px;
+    padding: 0px 30px;
   }
   @media screen and (max-width: 35.5em) {
   color:blue
