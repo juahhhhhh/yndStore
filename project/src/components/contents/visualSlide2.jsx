@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, {Navigation} from 'swiper/core';
 // import 'swiper-bundle.css';
 import axios from "axios";
 import styled from "styled-components";
@@ -21,12 +22,13 @@ const VisualSlide2 = () => {
     useEffect(async () => visualList2(), []);
     return (
 
-        <div className="visual-slide-col">
+        <div className="visual-slide-col" style={{margin:"0 0 120px"}}>
             <div className="inner-col">
                 <SectionTitle align={true}  beforeDesc={'야나두 야나두'} title={'Swiper Library 사용'} afterDesc={''}/>
                 <Swiper
                     className='swiper-container'
-                    spaceBetween={10}
+                    navigation={true}
+                    spaceBetween={20}
                     slidesPerView={2}
                     onSwiper={(swiper) => console.log(swiper,'zzz')}
                     onSlideChange={() => console.log("slide change")}

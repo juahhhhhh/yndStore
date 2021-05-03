@@ -43,7 +43,8 @@ const GlobalStyles = createGlobalStyle`
       display: none
     }
 
-
+  
+    .inner-col {width:80%; max-width:1275px; margin:0 auto;}
 `;
 
 export default GlobalStyles;
