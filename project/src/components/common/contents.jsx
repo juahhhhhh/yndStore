@@ -7,10 +7,9 @@ import MembershipSlide from "../contents/membershipSlide";
 const Contents = () => {
     return (
         <>
-            {/*<VisualSlide/>*/}
+            <VisualSlide/>
             <VisualSlide2/>
             <MembershipSlide/>
-
             <ClassSlide/>
         </>
     );

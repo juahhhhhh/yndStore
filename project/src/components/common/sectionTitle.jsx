@@ -10,5 +10,6 @@ const SectionTitle = ({ beforeDesc, title, afterDesc, align }) => {
             {afterDesc}
         </Title>
     );
+
 };
 export default SectionTitle;

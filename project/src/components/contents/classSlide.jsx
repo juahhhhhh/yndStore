@@ -49,7 +49,6 @@ const ClassSlide = () => {
                                                         <span>Top 1</span>
                                                         <button>Like</button>
                                                     </div>
-                                                    {/*<img src={item.picture} alt=""/>*/}
                                                     <Picture style={{backgroundImage: `url(` + item.picture + `)`}} />
                                                     <dl>
                                                         <dt>{item.title}</dt>

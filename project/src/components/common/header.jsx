@@ -1,13 +1,13 @@
 import React from 'react';
 import Nav from '../contents/nav';
 import styled from 'styled-components';
-import footerLogo from '../../images/logo.png';
+import headerLogo from '../../images/logo.png';
 
 const Header = () => {
     return (
         <HeaderWrap>
             <HeaderInner>
-                <h1><img src={footerLogo} alt="야나두"/></h1>
+                <h1><img src={headerLogo} alt="야나두"/></h1>
                 {/*<h1>yanadoo</h1>*/}
                 <input className="menu-btn" type="checkbox" id="menu-btn"/>
                 <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"/></label>
